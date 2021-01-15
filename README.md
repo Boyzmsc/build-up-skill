@@ -1,3 +1,3 @@
-# To build up coding skill
+# Build up coding skill
 
 using https://www.acmicpc.net/
