@@ -23,36 +23,48 @@ int getNumOfH(int num)
             int value = 0;
             string n = to_string(i);
             // cout << n << endl;
-            for(int k = 0;k< n.length();k++){
-                array.push_back(n[k]-'0');
+            for (int k = 0; k < n.length(); k++)
+            {
+                array.push_back(n[k] - '0');
             }
-            for(int l = 0;l < array.size()-1;l++){
-                if(l == 0){
-                    value = array[l+1]- array[l];
+            for (int l = 0; l < array.size() - 1; l++)
+            {
+                if (l == 0)
+                {
+                    value = array[l + 1] - array[l];
                     // cout << "val : "<< value << endl;
-                }else{
-                    if(value != (array[l+1] - array[l])){
+                }
+                else
+                {
+                    if (value != (array[l + 1] - array[l]))
+                    {
                         isH = false;
                         break;
                     }
                 }
             }
             // cout << isH << endl;
-            if(isH){
-                count ++;
+            if (isH)
+            {
+                count++;
             }
         }
     }
     return count;
 }
 
-int main(){
+int main()
+{
     int n;
-    while(true){
+    while (true)
+    {
         cin >> n;
-        if(n > 0 && n <= 1000){
+        if (n > 0 && n <= 1000)
+        {
             break;
-        }else{
+        }
+        else
+        {
             continue;
         }
     }
