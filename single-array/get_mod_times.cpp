@@ -12,6 +12,7 @@ void getModTimes()
     {
         int n;
         cin >> n;
+        
         while (true)
         {
             if (n <= 1000 && n >= 0)
