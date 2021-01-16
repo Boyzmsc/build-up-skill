@@ -3,13 +3,13 @@
 #include <algorithm>
 using namespace std;
 
-int getTestCaseNum()
+int getNum()
 {
     int t;
     while (true)
     {
         cin >> t;
-        if ((t > 0) && (t <= 1000000))
+        if ((t > 0) && (t <= 100000))
         {
             break;
         }
@@ -21,33 +21,16 @@ int getTestCaseNum()
     return t;
 }
 
-void getPlusTable(int testNum)
+void getNTable(int num)
 {
-    for (int i = 0; i < testNum; i++)
+    for (int i = 1; i <= num; i++)
     {
-        int a, b;
-        cin >> a >> b;
-        while (true)
-        {
-            if ((a >= 1) && (a <= 1000) && (b >= 1) && (b <= 1000))
-            {
-                break;
-            }
-            else
-            {
-                continue;
-            }
-        }
-        cout << a + b << "\n";
+        cout << i << "\n";
     }
 }
 
 int main()
 {
-    // C++의 표준 stream의 동기화를 끊는 역할
-    cin.tie(NULL);
-    cout.tie(NULL);
-    ios::sync_with_stdio(false);
-    int testCase = getTestCaseNum();
-    getPlusTable(testCase);
+    int num = getNum();
+    getNTable(num);
 }
