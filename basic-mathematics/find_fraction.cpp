@@ -26,9 +26,18 @@ void findFraction(long a)
             first = last + 1;
             last += add;
         }
-        cout << "f : " << first << " e : " << last << endl;
+        // cout << "f : " << first << " e : " << last << endl;
     }
-    
+    // a - first => 번째 수
+    // cout << count << endl;
+    if (count % 2 == 1)
+    {
+        cout << count - (a - first) << "/" << 1 + (a - first) << endl;
+    }
+    else
+    {
+        cout << 1 + (a - first) << "/" << count - (a - first) << endl;
+    }
 }
 
 int main()
