@@ -33,9 +33,9 @@ void getWarpCount(int testNum)
         {
             cout << 2 * i - 3 << endl;
         }
-        else if ((pow(i, 2) + pow(i - 1, 2)) / 2 >= y - x)
+        else if (((pow(i, 2) + pow(i - 1, 2)) / 2) >= y - x)
         {
-            cout << 2 * (i - 2) << endl;
+            cout << 2 * (i - 1) << endl;
         }
         else
         {
