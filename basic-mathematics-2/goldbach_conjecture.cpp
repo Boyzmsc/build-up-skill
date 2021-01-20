@@ -39,6 +39,8 @@ void getPrimeNumPartition(int test)
                 first_add.push_back(i);
             }
         }
+
+        // prime number partition 구하기
         multimap<int, string> add;
         multimap<int, string>::iterator iter;
         for (int i = 0; i < first_add.size(); i++)
@@ -52,10 +54,10 @@ void getPrimeNumPartition(int test)
                 }
             }
         }
-        
         cout << add.begin()->second << '\n';
     }
 }
+
 int main()
 {
     int t;
