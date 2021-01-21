@@ -25,7 +25,7 @@ int getNumOfPoint(int x1, int y1, int r1, int x2, int y2, int r2)
 
     double len = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
 
-    if (len == 0 && big_r == small_r)
+    if (x1 == x2 && y1 == y2 && big_r == small_r)
     {
         return -1;
     }
