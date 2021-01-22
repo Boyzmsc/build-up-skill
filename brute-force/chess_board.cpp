@@ -11,16 +11,19 @@ void chessBoard(int n, int m)
     int N = n;
     vector<string> board;
     vector<int> counts;
+    // board 입력
     while (N--)
     {
         string line;
         cin >> line;
         board.push_back(line);
     }
+    // 왼쪽 위를 기준으로 8*8의 크기로 개수 검정
     for (int i = 0; i <= n - 8; i++)
     {
         for (int j = 0; j <= m - 8; j++)
         {
+            // 왼쪽 위가 'W'일 때, 'B'일 때 모두 검정
             // case -> 'W'
             int count_first = 0;
             for (int x = i; x <= i + 7; x++)
@@ -109,6 +112,7 @@ void chessBoard(int n, int m)
                     }
                 }
             }
+            // 두 개수 결과 중 최소값 삽입
             counts.push_back(min(count_first, count_second));
             // cout << count_first << " " << count_second << endl;
         }
