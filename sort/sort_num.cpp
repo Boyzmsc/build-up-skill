@@ -6,7 +6,8 @@
 
 using namespace std;
 
-void sortNum(int n)
+// selection sort
+void selectionSort(int n)
 {
     vector<int> nums;
     while (n--)
@@ -39,5 +40,5 @@ int main()
 {
     int n;
     cin >> n;
-    sortNum(n);
+    selectionSort(n);
 }
