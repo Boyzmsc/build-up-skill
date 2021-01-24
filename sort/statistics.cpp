@@ -30,10 +30,12 @@ void sort(int n)
         sum += nums[i];
         count[nums[i] + 4000]++;
     }
+    // 평균값
     // round() -> 반올림 함수
     sum /= nums.size();
     cout << round(sum) << '\n';
 
+    // 중간값
     cout << nums[nums.size() / 2] << '\n';
 
     int compare = count[0];
@@ -53,13 +55,7 @@ void sort(int n)
 
     sort(mode.begin(), mode.end());
 
-    // for (int i = 0; i < mode.size(); i++)
-    // {
-    //     cout << mode[i] << endl;
-    // }
-
-    // cout << "-------------------" << endl;
-
+    // 최빈값
     if (mode.size() > 1)
     {
         cout << mode[1] << '\n';
@@ -69,6 +65,7 @@ void sort(int n)
         cout << mode[0] << '\n';
     }
 
+    // 범위
     cout << nums.back() - nums.front() << '\n';
 }
 
