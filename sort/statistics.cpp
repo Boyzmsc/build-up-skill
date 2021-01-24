@@ -8,7 +8,7 @@
 using namespace std;
 
 // using sort api in C++
-void sort(int n)
+void statistics(int n)
 {
     vector<int> nums;
     vector<int> mode;
@@ -73,5 +73,5 @@ int main()
 {
     int n;
     cin >> n;
-    sort(n);
+    statistics(n);
 }
