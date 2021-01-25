@@ -10,26 +10,24 @@ int n, m;
 bool isVisit[8];
 int nums[8];
 
-// 함수 외부에서 변수 선언
-// Back-Tracking으로 구현 (조건문 + Recursion)
-void getSequence(int count)
+void getSequence(int count, int index)
 {
     if (count == m)
     {
         for (int i = 0; i < m; i++)
         {
-            cout << nums[i] + 1<< " ";
+            cout << nums[i] + 1 << " ";
         }
         cout << endl;
     }
 
-    for (int i = 0; i < n; i++)
+    for (int i = index; i < n; i++)
     {
         if (!isVisit[i])
         {
             isVisit[i] = true;
             nums[count] = i;
-            getSequence(count + 1);
+            getSequence(count + 1, i);
             isVisit[i] = false;
         }
     }
@@ -38,5 +36,5 @@ void getSequence(int count)
 int main()
 {
     cin >> n >> m;
-    getSequence(0);
+    getSequence(0, 0);
 }
