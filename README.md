@@ -1,4 +1,4 @@
-# Build up coding skill
+# For Coding Skill
 
 ## Phase
 
