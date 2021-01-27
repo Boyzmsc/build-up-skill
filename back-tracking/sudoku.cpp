@@ -7,6 +7,7 @@ using namespace std;
 int sudoku[9][9];
 vector<pair<int, int>> pos;
 
+// 특정 블록에 num의 숫자가 들어갈 수 있는지 true/false 리턴
 bool check(int row, int col, int num)
 {
     for (int k = 0; k < 9; k++)
@@ -42,6 +43,11 @@ bool dfs(int count)
     {
         if (check(row, col, k))
         {
+            // 해당 블록을 특정 숫자로 채워넣은 다음
+            // back-tracking으로 전체 스도쿠를 풀어봄
+            // 하지만 올바르지 않은 숫자 넣음으로 동작 오류가 걸리고 false를 리턴하면
+            // 다시 돌아와서 해당 블록을 0으로 초기화한 다음
+            // 다른 숫자 (이후에 숫자)로 다시 시도해봄!
             sudoku[row][col] = k;
             if (dfs(count + 1))
             {
