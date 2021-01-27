@@ -1,29 +1,29 @@
-# Build up coding skill
+# For Coding Skill
 
 ## Phase
 
-* single-operation
+* Single-operation
 
-* if-statement
+* If-statement
 
-* for-statement
+* For-statement
 
-* while-statement
+* While-statement
 
-* single-array
+* Single-array
 
-* function
-* string
-* basic-mathematics
-* basic-mathematics-2
-* recursive
-* brute-force
-* sort
-* back-tracking
-* dynamic-programming
-* greedy-algorithm
-* number-theory
-* stack
+* Function
+* String
+* Basic-mathematics
+* Basic-mathematics-2
+* Recursive
+* Brute-force
+* Sort
+* Back-tracking
+* Dynamic-programming
+* Greedy-algorithm
+* Number-theory
+* Stack
 
 
 
