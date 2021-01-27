@@ -6,8 +6,10 @@ using namespace std;
 
 int n;
 int result;
+// 퀸이 위치해있는 배열
 vector<pair<int, int>> queenLocation;
 
+// 퀸을 해당 위치에 놓을 수 있는지 true/false 값 반환 
 bool putQueen(const int &r, const int &c)
 {
     for (pair<int, int> p : queenLocation)
@@ -20,6 +22,7 @@ bool putQueen(const int &r, const int &c)
     return true;
 }
 
+// back-tracking
 void dfs(const int &r)
 {
     if (n == r)
