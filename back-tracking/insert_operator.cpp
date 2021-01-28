@@ -5,26 +5,17 @@
 
 using namespace std;
 
-int n;
-int result;
 vector<int> nums;
 vector<int> results;
 int operators[4];
 
-int factorial(int num)
-{
-    if (num == 0 && num == 1)
-    {
-        return 1;
-    }
-    int result = 1;
-    for (int i = 2; i < num; i++)
-    {
-        result *= i;
-    }
-    return result;
-}
-
+// 입력받은 operator들을 모든 경우의 수로 계산하는 back-tracking 메서드
+// count -> operator들을 모두 참조했는지 확인하기 위한 인자
+// num -> back-tracking에서 계산된 값
+// plus -> 남아있는 plus operator 개수
+// minus -> 남아있는 minus operator 개수
+// multi -> 남아있는 multi operator 개수
+// divide -> 남아있는 divide operator 개수
 void dfs(int count, int num, int plus, int minus, int multi, int divide)
 {
     if (count == nums.size() - 1)
@@ -65,6 +56,7 @@ int main(void)
         cin >> num;
         nums.push_back(num);
     }
+    // +, -, *, / 순으로 operators 백터에 insert
     cin >> operators[0] >> operators[1] >> operators[2] >> operators[3];
 
     dfs(0, nums[0], operators[0], operators[1], operators[2], operators[3]);
