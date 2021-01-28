@@ -2,28 +2,39 @@
 
 ## Phase
 
-* Single-operation
+[X] Single-operation
 
-* If-statement
+[X] If-statement
 
-* For-statement
+[X] For-statement
 
-* While-statement
+[X] While-statement
 
-* Single-array
+[X] Single-array
 
-* Function
-* String
-* Basic-mathematics
-* Basic-mathematics-2
-* Recursive
-* Brute-force
-* Sort
-* Back-tracking
-* Dynamic-programming
-* Greedy-algorithm
-* Number-theory
-* Stack
+[X] Function
+
+[X] String
+
+[X] Basic-mathematics
+
+[X] Basic-mathematics-2
+
+[X] Recursive
+
+[X] Brute-force
+
+[X] Sort
+
+[X] Back-tracking
+
+[ ] Dynamic-programming
+
+[ ] Greedy-algorithm
+
+[ ] Number-theory
+
+[ ] Stack
 
 
 
