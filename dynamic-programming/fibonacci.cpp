@@ -5,6 +5,8 @@ using namespace std;
 
 int count[41][2];
 
+// 피보나치 함수를 재귀로 구현 안함
+// 배열에 0과 1을 몇번 호출했는지 count 개수를 저장
 void fibonacci(int n)
 {
     count[0][0] = 1;
