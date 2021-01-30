@@ -15,6 +15,10 @@ int w(int a, int b, int c)
     {
         return w(20, 20, 20);
     }
+    // arr이라는 배열에 인자값들을 저장함으로써,
+    // 추후에 해당 인자값을 재계산할 필요 없이, 
+    // 배열에서 바로 결과값을 가져오면 됨
+    // memoization을 이용한 시간 단축!
     if (arr[a][b][c] != 0)
     {
         return arr[a][b][c];
