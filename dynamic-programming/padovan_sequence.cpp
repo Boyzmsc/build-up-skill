@@ -7,6 +7,9 @@ long long arr[101]{
     0,
 };
 
+// 파도반 수열 => arr[n] = arr[n-1] + arr[n-5]
+// N이 100일 때, 큰 수를 리턴하기 때문에
+// 배열의 타입을 long long으로 선언
 int main()
 {
     long t;
