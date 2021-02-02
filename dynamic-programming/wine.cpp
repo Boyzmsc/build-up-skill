@@ -32,9 +32,11 @@ int main()
     {
         for (int i = 4; i <= n; i++)
         {
+            // dp(i-2) | x o 인 경우,
+            // dp(i-3) | x o o 인 경우,
+            // dp(i-1) | x  인 경우 중 최댓값 dp[i]에 저장
             dp[i] = max(dp[i - 2] + wines[i], max(dp[i - 3] + wines[i - 1] + wines[i], dp[i - 1]));
         }
-        // dp[n] = max(dp[n - 3] + wines[n - 1] + wines[n], max(dp[n - 2] + wines[n], dp[n - 1]));
     }
 
     cout << dp[n] << endl;
