@@ -55,6 +55,6 @@ int main()
         dp[i] = dp1[i] + dp2[i] - 1;
     }
 
-    // dp 인자 중 가장 큰 원소 반환
+    // dp의 원소들 중 가장 큰 원소 반환
     cout << *max_element(dp.begin(), dp.end()) << "\n";
 }
