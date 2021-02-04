@@ -18,13 +18,11 @@ int main()
         pos.push_back({start, end});
     }
 
+    // pos의 원소 중 첫번째 인자를 기준으로 정렬
     sort(pos.begin(), pos.end());
 
-    // for (int i = 0; i < n; i++)
-    // {
-    //     cout << pos[i].first << " " << pos[i].second << endl;
-    // }
-
+    // index가 1부터 벡터 끝까지 길이가 가장 긴
+    // 증가하는 수열(첫번째 인자, 두번째 인자)을 dp에 저장
     for (int i = 1; i < n; i++)
     {
         for (int j = 0; j < i; j++)
@@ -36,10 +34,6 @@ int main()
         }
     }
 
-    // for (int i = 0; i < dp.size(); i++)
-    // {
-    //     cout << dp[i] << endl;
-    // }
-
+    // 전체 개수에서 dp의 원소들 중 가장 큰 원소를 뺀 값 리턴
     cout << n - *max_element(dp.begin(), dp.end()) << "\n";
 }
