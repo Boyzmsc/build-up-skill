@@ -28,7 +28,7 @@
 
 - [X] Back-tracking
 
-- [ ] Dynamic-programming
+- [X] Dynamic-programming
 
 - [ ] Greedy-algorithm
 

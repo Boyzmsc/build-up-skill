@@ -10,8 +10,6 @@ int main()
     int num, capacity;
     cin >> num >> capacity;
 
-    // pair : weight, value
-    vector<pair<int, int>> items;
     int dp[capacity + 1]{
         0,
     };
@@ -21,6 +19,9 @@ int main()
         int weight, value;
         cin >> weight >> value;
 
+        // 물건의 무게와 가치를 입력받을 때마다,
+        // 최대 무게부터 입력받은 무게까지 각 배낭의 무게에 따라
+        // 수용할 수 있는 가치의 최댓값을 dp에 담고있음!
         for (int j = capacity; j >= weight; j--)
         {
             dp[j] = max(dp[j], dp[j - weight] + value);
