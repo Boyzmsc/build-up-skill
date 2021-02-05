@@ -5,6 +5,10 @@
 #include <algorithm>
 using namespace std;
 
+// LCS(Longest Common Subsequence, 최장 공통 부분 수열)
+// 두 수열이 주어졌을 때, 모두의 부분 수열이 되는 수열 중 가장 긴 것을 찾는 코드
+// C++의 string과 find() 함수를 이용, 동적계획법으로 구현
+
 int main()
 {
     string s1, s2;
@@ -49,17 +53,13 @@ int main()
             continue;
         }
 
-        // cout << s1[i] << endl;
-        // cout << "------" << endl;
         int n = dp.size();
-
-        // cout << "size : " << n << endl;
         int index = 0;
+
         while (s2.find(s1[i], index) != string::npos && index < s2.length())
         {
             index = s2.find(s1[i], index);
 
-            // cout << "index : " << index << endl;
             int check = second;
 
             for (int j = 0; j < n; j++)
@@ -70,25 +70,14 @@ int main()
                 }
             }
 
-            // if (second != check)
-            // {
             first = index;
             dp.push_back({first, second});
-            // cout << "push :" << first << " " << second << endl;
-            // }
-            // else
-            // {
-            //     cout << "Not push :" << first << " " << second << endl;
-            // }
             index++;
         }
     }
 
-    // cout << "========================" << endl;
-
     for (int i = 0; i < dp.size(); i++)
     {
-        // cout << dp[i].first << " " << dp[i].second << endl;
         results.push_back(dp[i].second);
     }
 
