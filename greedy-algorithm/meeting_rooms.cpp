@@ -14,6 +14,7 @@ public:
         start = s;
         end = e;
     }
+
     // sort 함수를 위한 < 연산자 재정의
     // sort 함수에 재정의된 조건으로 적용됨
     bool operator<(Meeting &rhs)
@@ -30,6 +31,9 @@ public:
     }
 };
 
+// 그리디 알고리즘을 이용해 최대로 할 수 있는 회의의 갯수를 출력
+// 회의 종료 시간을 기준으로 오름차순으로 정렬한 뒤,
+// 마지막 회의 종료 시간과 그 다음 회의 시작 시간을 비교
 int main()
 {
     int num;
@@ -56,11 +60,6 @@ int main()
             last = meetings[i].end;
             result++;
         }
-    }
-
-    for (int i = 0; i < meetings.size(); i++)
-    {
-        cout << meetings[i].start << " " << meetings[i].end << endl;
     }
 
     cout << result << '\n';
