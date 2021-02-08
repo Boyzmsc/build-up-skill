@@ -5,6 +5,8 @@
 #include <algorithm>
 using namespace std;
 
+// 식이 주어졌을 때, 괄호를 적절히 쳐서 나오는 식의 최솟값 구하기
+// 풀이 : '-'가 나온 시점부터 그 뒤에 오는 피연산자들을 모두 빼주면 됨
 int main()
 {
     string s;
@@ -18,6 +20,8 @@ int main()
     int num;
     for (int i = 0; i < s.length(); i++)
     {
+        // '-' 연산자가 나온 뒤에 해당하는 조건문
+        // input을 문자열로 받기 때문에 char형태의 숫자를 정수 형태로 변환
         if ((i == s.length() - 1) && isMinus && isNum)
         {
             num = num * 10 + (s[i] - '0');
@@ -45,6 +49,8 @@ int main()
             num = 0;
         }
 
+        // '-' 연산자가 나오기 전에 해당하는 조건문
+        // input을 문자열로 받기 때문에 char형태의 숫자를 정수 형태로 변환
         if (i == s.length() - 1 && !isMinus && isNum)
         {
             num = num * 10 + (s[i] - '0');
@@ -71,6 +77,7 @@ int main()
             num = 0;
         }
 
+        // '-' 연산자가 나온 시점부턴 뒤에 피연산자들을 전부 뺌
         if (s[i] == '-')
         {
             isMinus = true;
