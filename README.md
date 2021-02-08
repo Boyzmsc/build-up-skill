@@ -30,7 +30,7 @@
 
 - [X] Dynamic-programming
 
-- [ ] Greedy-algorithm
+- [X] Greedy-algorithm
 
 - [ ] Number-theory
 
