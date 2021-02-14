@@ -32,7 +32,7 @@
 
 - [X] Greedy-algorithm
 
-- [ ] Number-theory
+- [X] Number-theory
 
 - [ ] Stack
 
