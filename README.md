@@ -34,7 +34,7 @@
 
 - [X] Number-theory
 
-- [ ] Stack
+- [X] Stack
 
 - [ ] Queue-deque
 
