@@ -36,7 +36,7 @@
 
 - [X] Stack
 
-- [ ] Queue-deque
+- [X] Queue-deque
 
 - [ ] Divide-conquer
 
