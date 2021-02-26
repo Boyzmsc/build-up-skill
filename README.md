@@ -38,7 +38,7 @@
 
 - [X] Queue-deque
 
-- [ ] Divide-conquer
+- [X] Divide-conquer
 
 - [ ] Binary-search
 
