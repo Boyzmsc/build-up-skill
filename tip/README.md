@@ -18,4 +18,5 @@
 * upper_bound(), lower_bound() 함수는 배열을 정렬한 뒤 사용
 * upper_bound() -> 찾으려는 값을 처음으로 초과하는 위치를 반환
 * lower_bound() -> 찾으려는 값 이상이 처음 나타나는 위치를 반환
+* lower_bound() -> 찾으려는 값이 없으면 해당 값보다 큰 가장 작은 정수를 반환
 * LLONG_MIN / LLONG_MAX -> long long 타입에서의 최솟값/최댓값
