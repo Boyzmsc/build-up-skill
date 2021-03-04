@@ -40,7 +40,7 @@
 
 - [X] Divide-conquer
 
-- [ ] Binary-search
+- [X] Binary-search
 
 - [ ] Priority-queue
 
