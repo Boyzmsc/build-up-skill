@@ -44,6 +44,9 @@
 
 - [ ] Priority-queue
 
+- [ ] Dynamic-programming-2
+
+- [ ] Dfs-bfs
 
 
 
