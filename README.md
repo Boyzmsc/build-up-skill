@@ -48,8 +48,13 @@
 
 - [ ] Dfs-bfs
 
+- [ ] Shortest-path
 
+- [ ] Two-pointer
 
+- [ ] Dynamic-programming / Shortest-path Backtracking
+
+- [ ] Tree
 
 ## Link
 
