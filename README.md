@@ -56,6 +56,8 @@
 
 - [ ] Tree
 
+- [ ] Union-find
+
 ## Link
 
 https://www.acmicpc.net/
