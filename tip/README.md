@@ -21,3 +21,4 @@
 * lower_bound() -> 찾으려는 값이 없으면 해당 값보다 큰 원소들 중 가장 작은 원소의 위치를 반환
 * 벡터에서 *_bound() 함수를 통해 index를 받아오는 법 -> 'int idx = *_bound(v.begin(), v.end(), toFind) - v.begin();'
 * LLONG_MIN / LLONG_MAX -> long long 타입에서의 최솟값/최댓값
+* pair<type, type>을 사용하여 한 원소에 두개의 정보를 담을 수 있음
