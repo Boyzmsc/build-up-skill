@@ -42,7 +42,7 @@
 
 - [X] Binary-search
 
-- [ ] Priority-queue
+- [X] Priority-queue
 
 - [ ] Dynamic-programming-2
 
