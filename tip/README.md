@@ -32,4 +32,6 @@
 * 벡터에서 `*_bound()` 함수를 통해 index를 받아오는 법 : `int idx = *_bound(v.begin(), v.end(), toFind) - v.begin();`
 <br />
 
-
+* `priority_queue`는 Heap Tree 구조
+* `priority_queue<int>` : 내림차순 Heap Sort 수행
+* `priority_queue<int, vector<int>, greater<int>>` : 오름차순 Heap Sort 수행
